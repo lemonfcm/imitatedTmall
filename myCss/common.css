@@ -1,0 +1,184 @@
+body{
+    font-size: 12px;
+    font-family: Arial;
+}
+
+/*页面导航部分*/
+a{
+    color:#999;
+}
+.redColor{
+    color: #c40000 !important;
+}
+nav.top{
+    background-color:#f2f2f2 ;
+    border-bottom:1px solid #e7e7e7 ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+nav.top span ,nav.top a{
+    color: #999;
+    margin: 0 10px 0 10px;
+}
+nav.top a:hover{
+    color: #c40000;
+}
+a:hover{
+    color: #c40000;
+    text-decoration:none;
+}
+
+/*搜索栏*/
+div.searchDiv{
+    background-color: #c40000;
+    height: 40px;
+    width: 400px;
+    margin: 50px auto;
+    padding: 1px;
+    display: block;
+}
+div.searchDiv input{
+    width: 275px;
+    height: 36px;
+    margin: 1px;
+    border: 1px solid transparent;/*边框设置成透明的，否则会有边框阴影*/
+    outline: none; /*去掉输入框轮廓，否则获取焦点时会变颜色*/
+}
+div.searchDiv button{
+    width: 110px;
+    border: 1px solid transparent;
+    background-color: #c40000;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+div.searchBelow{
+    margin-top: 3px;
+    margin-left: -20px;
+}
+div.searchBelow span{
+    color: #999;
+}
+div.searchBelow a{
+    padding: 0px 20px 0px 20px;
+    font-size: 14px;
+}
+img.logo{
+    position: relative;
+    left:-20px;
+    top:-50px;
+    z-index: -1;
+    float: left;
+}
+
+
+/*简单搜素栏*/
+img.simpleLogo{
+/*    position: absolute;
+    left:20px;
+    top:250px;*/
+    width:100px;
+}
+div.simpleSearchDiv{
+    width:300px;
+    height: 40px;
+    background-color: #c40000;
+    margin:10px 20px 40px;
+    padding: 1px;
+    display: inline-block;
+    float: right;
+}
+div.simpleSearchDiv input{
+    width:225px;
+    height:34px;
+    margin: 2px;
+    border: 1px solid transparent ;
+    outline: none;
+}
+div.simpleSearchDiv button{
+    width: 60px;
+    border: 1px solid transparent ;
+    outline: none;
+    color: #fff;
+    background-color: #c40000;
+    font-size: 14px;
+}
+div.simpleSearchBelow{
+    margin-top: 3px;
+    margin-left: -20px;
+}
+div.simpleSearchBelow span{
+    color: #999
+}
+div.simpleSearchBelow span a{
+    margin: 0 20px;
+    font-size:14px;
+}
+
+/*页脚第一部分*/
+div.footer{
+    margin: 0px;
+    border-top: 1px solid #e7e7e7;
+}
+div.foot_ensure{
+    margin: 24px auto;/*这个div剧中，并不是里面的内容居中了*/
+    text-align: center;
+}
+div.footer_desc{
+    border-top: 1px solid #e7e7e7;
+    padding: 30px 20px 0px 20px;
+    margin: 0px 200px;
+
+}
+div.footer_desc div.descColumn{
+    width: 20%;
+    float: left;
+    padding-left: 15px;
+}
+div.footer_desc div.descColumn span.descColumnTitle{
+    color: #646464;
+    font-weight: bold;
+    font-size: 16px;
+}
+div.footer_desc div.descColumn a{
+    display: block;
+    padding-top: 3px;
+}
+
+/*页脚第二部分*/
+div.footer2{
+    margin: 0px;
+    border-top: 1px solid #e7e7e7;
+}
+img.cateye{
+    margin-left: 200px;
+}
+div.copyright{
+    border-top:2px solid #c40000;
+    background-color: #000;
+    padding-left: 180px;
+}
+
+div.copyright div.white_link{
+  color: #ffffff;
+    margin-left: 20px;
+    padding: 10px 0;
+}
+div.copyright span.slash{
+    color:white;
+}
+div.copyright div.white_link a{
+    color: white;
+    padding: 0 5px;
+}
+div.license{
+    margin-left: 20px;
+    padding-bottom: 30px;
+}
+div.license span{
+    color: #a4a4a4;
+}
+ div.copyRightYear{
+    color: #686868;
+    margin: 10px 0px;
+}

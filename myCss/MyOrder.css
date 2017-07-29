@@ -1,0 +1,163 @@
+body{
+    font-size:12px;
+    font-family:Arial;
+}
+a{
+    color:#999;
+}
+a:hover{
+    color:#c40000;
+    text-decoration: none;
+}
+div.boughtDiv{
+    max-width: 1013px;
+    margin:10px auto;
+}
+div.orderType{
+    clear: both;
+}
+div.orderType div{
+    float: left;
+    border-bottom:2px solid #e8e8e8;
+}
+div.orderType a{
+    border-right: 1px solid #e8e8e8;
+    display: inline-block;
+    padding:0 20px;
+    margin-bottom: 10px;
+    font-size:16px;
+    font-weight:bold;
+    color:black;
+    text-decoration:none;
+}
+div.orderType a:hover{
+    color:#c40000;
+    text-decoration:none;
+}
+div.orderType div.selectedOrderType{
+    border-bottom: 2px solid #c40000;
+}
+div.orderType div.selectedOrderType a{
+    color: #c40000;
+}
+div.orderType div.orderTypeLastOne{
+    overflow: hidden;
+    float: none !important;
+    border-bottom: solid 2px #e8e8e8;
+    height:35px;
+}
+div.orderType a.noRightborder{
+    border-right: 0px !important;
+}
+div.orderListTitle table.orderListTitleTable{
+    border:1px solid #e8e8e8;
+    text-align: center;
+    background-color: #f5f5f5;
+    width:100%;
+    font-size: 12px;
+    margin: 20px 0;
+}
+div.orderListTitle table.orderListTitleTable td{
+    padding: 12px 0;
+}
+table.orderListItemTable{
+    width:100%;
+    margin:20px 0;
+    border: 2px solid #ECECEC;
+}
+table.orderListItemTable:hover{
+    border: 2px solid #ccc;
+}
+table.orderListItemTable td{
+    padding:8px 10px;
+}
+table.orderListItemTable tr.orderListItemFirstTR{
+    background-color: #f1f1f1;
+}
+div.orderItemWangWangGif{
+   /* display: inline-block;*/
+    width: 67px;
+    height:22px;
+    background-image: url(http://how2j.cn/tmall/img/site/wangwang.gif);
+    background-repeat: no-repeat;
+    background-color: transparent;/*尽管在大多数情况下，没有必要使用 transparent。
+    不过如果您不希望某元素拥有背景色，同时又不希望用户对浏览器的颜色设置影响到您的设计，那么设置 transparent 值还是有必要的。*/
+    background-attachment: scroll;
+    background-position: -0px -0px; /*background-position 属性设置背景图像的起始位置。*/
+    position: relative;
+    top:0px;
+    left:2px;
+}
+td.orderItemDeleteTD{
+    text-align: right;
+}
+span.orderListItemDelete{
+    color: #999;
+    display: inline-block;
+    font-size: 16px;
+    margin:0 10px;
+}
+div.orderListItemProductLinkOutDiv{
+    position:relative;
+    height:80px;
+}
+div.orderListItemProductLinkInnerDiv{
+    position: absolute;
+    bottom: 0px;
+}
+div.orderListItemProductOriginalPrice{
+    color: #999;
+    font-size:14px
+}
+div.orderListItemProductPrice{
+    color: #3c3c3c;
+    font-size: 14px;
+}
+td.orderListItemNumberTD{
+    text-align:center;
+}
+td.orderItemOrderInfoPartTD{
+    border:1px solid #ececec;
+}
+span.orderListItemNumber{
+    color:#3c3c3c;
+}
+td.orderListItemProductRealPriceTD{
+    text-align:center;
+}
+div.orderListItemProductRealPrice{
+    font-weight: bold;
+    color:#3c3c3c;
+    font-size:14px;
+}
+div.orderListItemPriceWithTransport{
+    color:#6c6c6c;
+}
+td.orderListItemButtonTD{
+    text-align:center;
+}
+button.orderListItemReview{
+    padding: 6px 12px;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius:2px;
+    color:#3c3c3c;
+    font-size:12px;
+    font-weight:bold;
+}
+button.orderListItemReview:hover{
+    color: #c40000;
+    border-color: #c40000;
+}
+button.orderListItemConfirm{
+    padding:6px 12px;
+    background-color:  #66B6FF;
+    border-width: 0px;
+    border-radius:2px;
+    color:white;
+    font-size:12px;
+    font-weight:bold;
+}
+button.orderListItemConfirm:hover{
+    background-color: #118adb;
+}

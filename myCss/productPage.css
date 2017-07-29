@@ -1,0 +1,319 @@
+body{
+    font-size: 12px;
+    font-family: Arial;
+}
+a:hover{
+    text-decoration:none;
+    /*超链鼠标悬停的时候,没有下划线*/
+}
+.redColor{
+    color: #c40000;
+}
+.boldWord{
+    font-weight: bold;
+}
+
+div.productPageDiv{
+    max-width: 1013px;
+    margin: 10px auto;
+}
+
+div.imgAndInfo{
+    margin:40px 20px;
+}
+div.imgInimgAndInfo{
+    width:400px;
+    float:left;
+}
+div.imgInimgAndInfo img.bigImg{
+    width:400px;  /*该图像在div里，它可以比div宽度大*/
+    height:400px;
+    border:1px solid #f2f2f2;
+    padding:20px;
+}
+div.imgInimgAndInfo div.smallImageDiv{
+    width:80%;
+    margin:20px auto;
+}
+div.smallImageDiv img.smallImage{
+    width: 60px;
+    height:60px;
+    border:2px solid white;
+    /*margin: 0 px;*/
+}
+div.smallImageDiv img.smallImage:hover{
+    border:2px solid black;
+}
+
+/*产品信息的样式*/
+div.infoInimgAndInfo{
+    padding:0 20px;
+    overflow: hidden;
+}
+div.infoInimgAndInfo div.productTitle{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+div.infoInimgAndInfo div.productSubTitle{
+    color:#dd2727;
+    font-size: 12px;
+    margin: 0 10px;
+}
+div.infoInimgAndInfo  div.juhuasuan{
+    color:white;
+    background-color: #2DA77A;
+    text-align: center;
+    line-height: 40px;/*文本垂直居中,如果只是height的话，div高度达到，但是文本（font-size: 12px;）并不能居中了*/
+    margin-top: 10px;
+}
+div.juhuasuan span.juhuasuanBig{
+    font-size:18px;
+    font-weight:bold;
+    font-family:黑体；
+}
+div.juhuasuan span.juhuasuanTime{
+    color: #FFC057;
+    font-weight:bold;
+}
+div.infoInimgAndInfo  div.productPriceDiv{
+    color:#666666;
+    background-image:url(priceBackground.png);
+    height:102px;
+    padding :10px;
+}
+div.infoInimgAndInfo  div.gouwujuanDiv{
+    margin-top: 5px;
+}
+div.infoInimgAndInfo  div.originalDiv{
+    margin-top: 5px;
+}
+div.infoInimgAndInfo  span.originalPriceDesc{
+    color: #999;
+    display: inline-block;
+    width:68px;
+}
+div.infoInimgAndInfo  span.originalPrice{
+    color: #333;
+    text-decoration: line-through;
+}
+div.infoInimgAndInfo  span.promotionPriceYuan{
+    color: #c40000;
+    font-size: 18px;
+}
+div.infoInimgAndInfo  span.promotionPrice{
+    color: #c40000;
+    font-size: 30px;
+    font-weight: bold;
+}
+div.infoInimgAndInfo  span.promotionPriceDesc{
+    color: #999;
+    display: inline-block;
+    width:68px;
+    position: relative;
+    top:-10px;
+    left: 0;
+}
+div.infoInimgAndInfo  div.productSaleAndReviewNumber{
+    margin: 20px 0;
+    padding:10px ;
+    border-top: 1px dotted #c9c9c9;
+    border-bottom:1px dotted #c9c9c9 ;
+}
+div.infoInimgAndInfo  div.productSaleAndReviewNumber div{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    color: #999999;
+}
+div.infoInimgAndInfo  div.productSaleAndReviewNumber div:first-child{
+    border-right: 1px solid #e5dfda;
+}
+div.infoInimgAndInfo  div.productNumber{
+    color: #999999;
+}
+div.infoInimgAndInfo span.productNumberSettingSpan{
+    border: 1px solid #999;
+    display: inline-block;
+    width:43px;
+    height:32px;
+   padding-top: 7px;
+}
+div.infoInimgAndInfo input.productNumberSetting{
+    border: 0px;
+    width: 80%;
+    height: 80%;
+}
+div.productNumber span.updown img{
+    display: inline-block;
+    vertical-align: top;
+}
+div.productNumber span.updown{
+    border: 1px solid #999;
+    display: block;
+    width:20px;
+    height: 14px;
+    padding-top:4px ;
+    text-align:center;
+}
+div.productNumber span.updownMiddle{
+    display: block;
+    height: 4px;
+}
+div.productNumber span.arrow{
+    display: inline-block;
+    width:22px;
+    height:32px;
+    vertical-align: bottom;
+}
+div.infoInimgAndInfo  div.serviceCommitmen{
+    margin:20px 0;
+}
+div.infoInimgAndInfo  span.serviceCommitmentDesc{
+    color: #999;
+}
+div.infoInimgAndInfo  span.serviceCommitmentLink a{
+    color: #666;
+}
+div.infoInimgAndInfo  div.buyDiv{
+    margin:20px 0;
+    text-align: center;
+}
+div.buyDiv button{
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    margin: 0 10px;
+}
+button.buyButton{
+    border: 1px solid #c40000;
+    color: #c40000;
+    font-size: 16px;
+    background-color: #FFEDED;
+    line-height: 40px;
+    text-align: center;
+}
+button.addCartButton{
+    border: 1px solid #c40000;
+    color: white;
+    font-size: 16px;
+    background-color: #c40000;
+    line-height: 40px;
+    text-align: center;
+}
+button.addCartButton span.glyphicon{
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+
+/*商品详情页面*/
+div.productDetailDiv{
+    width: 790px;
+    margin: 40px auto;
+}
+div.productDetailTopPart{
+    border:1px solid #dfdfdf;
+    border-left: 0px;
+}
+ a.selected{
+    border-left: 1px solid #cfbfb1;
+    border-right: 1px solid #cfbfb1;
+    color: #b10000;
+    font-weight: bold;
+    line-height: 46px;
+    text-align: center;
+    display: inline-block;
+    width: 90px;
+    position: relative;/*相对定位，为的是下一步使用:before新增加的元素做绝对定位。 因为绝对定位是基于定位了的父元素*/
+}
+ a.selected:before{
+    content:"";
+    display: block;
+    border: 1px solid #b00000;
+    width: 90px;
+    height: 0px;/*高度为0，只显示了边框*/
+    position: absolute;/*其父元素绝对定位，其父元素超链是相当定位的，所以这绝对定位就会基于父元素*/
+    top: -1px;
+    margin-left: -1px;
+}
+ a.selected:after{
+    content:"";
+    display: block;
+    border: 5px solid ;
+    border-color: #b00000 transparent transparent;
+    width: 0px;
+    height: 0px;
+    position: absolute;/*其父元素绝对定位，其父元素超链是相当定位的，所以这绝对定位就会基于父元素*/
+    top: -1px;
+    left: 50%;
+    margin-left: -5px;
+}
+div.productDetailDiv a.productDetailTopReviewLink{
+    color: #333;
+    padding: 0px 20px;
+    border-right:1px dotted #d2d2d2;
+}
+div.productDetailDiv span.productDetailTopReviewLinkNumber{
+    color: #3355B9;
+}
+div.productDetailDiv div.productParamterPart{
+    border: 1px solid #dfdfdf;
+    padding: 40px;
+}
+div.productDetailDiv  div.productParamte{
+    font-color:#999;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+div.productDetailDiv  div.productParamterList span{
+    display:block;
+    float:left;
+    color: #666;
+    width: 220px;
+    padding: 8px 0px;
+}
+div.productDetailDiv  div.productDetailImagesPart img{
+    display:block;
+    width:790px;
+    margin: 20px 0px;
+}
+div.productDetailDiv a:hover{
+    color: #c40000;
+}
+
+
+
+div.productReviewDiv{
+    width:790px;
+    margin:40px auto;
+}
+div.productReviewDiv div.productReviewContentPart{
+    padding-top: 50px;
+}
+div.productReviewDiv div.productReviewItem{
+    border-bottom:1px solid #e3e3e3;
+    margin: 10px 0px;
+}
+div.productReviewItem div.productReviewItemDesc{
+    width: 80%;
+    color: #333333;
+    margin:5px 20px;
+    display: inline-block;
+    float: left;
+    /*border: 1px solid red;*/
+}
+div.productReviewItemDesc div.productReviewItemDate{
+    color: #ccc;
+    margin-top:15px;
+}
+div.productReviewItem div.productReviewItemUserInfo{
+    color: #404040;
+    margin:5px 20px;
+    padding:20px 0;
+    /*border: 1px solid green;*/
+}
+div.userInfoGrayPart{
+    color: #999999;
+}

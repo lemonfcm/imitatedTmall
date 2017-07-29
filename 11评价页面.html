@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>评价页面</title>
+    <script src="study/js/jquery/2.0.0/jquery.min.js"></script>
+    <link rel="stylesheet"   href="study/css/bootstrap/3.3.6/bootstrap.min.css">
+    <script src="study/js/bootstrap/3.3.6/bootstrap.min.js" ></script>
+    <style type="text/css" rel="stylesheet">
+        body,table{
+            font-size:12px;
+            font-family:Arial 宋体;
+        }
+        div.reviewDiv{
+            max-width: 1013px;
+            margin:10px auto;
+        }
+        div.reviewProductInfoImg{
+            float: left;
+            border:1px solid #E7E7E7;
+            width:464px;
+            text-align: center;
+            /*padding:0px 30px;*/
+        }
+        div.reviewProductInfoImg img.reviewProductImg{
+            width:400px;
+            height:400px
+        }
+        div.reviewProductInfoRightDiv{
+            overflow: hidden;
+            border-top: 1px solid #E7E7E7;
+            padding:30px 20px;
+        }
+        div.reviewProductInfoRightText{
+            /*margin:10px;*/
+            font-size:16px;
+            color: #000;
+            font-weight:bold;
+        }
+        table.reviewProductInfoTable{
+            margin: 20px 10px;
+        }
+        table.reviewProductInfoTable td{
+            padding-bottom:5px;
+            color: #999999;
+        }
+        span.reviewProductInfoTablePrice{
+            font-size: 20px;
+            color:#c40000;
+            font-weight:bold;
+        }
+        span.reviewProductInfoTableSellNumber{
+            font-size: 14px;
+            color:#c40000;
+            font-weight:bold;
+        }
+        div.reviewProductInfoRightBelowDiv{
+            border:1px solid #F6F5F3;
+            /*  position: relative;*/
+            background-color: #FDFBFA;
+            height:166px;
+            padding:16px 0 16px 81px;
+        }
+        span.reviewProductInfoRightBelowImg{
+            display:inline-block;
+            border:1px solid #E1E1E1;
+            background-color: white;
+            width:23px;
+            height:42px;
+            background-image: url(img/site/reviewLight.png);
+            background-repeat: no-repeat;
+            padding: 0px;
+            /* position: absolute;
+             left:100px;
+             top: 20px;*/
+        }
+        span.reviewProductInfoRightBelowText{
+            display:inline-block;
+            width:200px;
+            height: 42px;
+            border:1px solid #EFEFEF;
+            padding: 4px;
+            color: #666;
+            font-size:12px;
+            position:relative;
+            top:-7px;
+            left:-4px;
+        }
+
+
+        div.reviewStasticsDiv{
+            margin: 20px 0px;
+        }
+        div.reviewStasticsLeft{
+            float:left;
+            width: 180px;
+        }
+        div.reviewStasticsLeft div.reviewStasticsLeftTop{
+            height: 6px;
+            background-color: #c40000;
+        }
+        div.reviewStasticsLeft div.reviewStasticsLeftContent{
+            background-color:  #F6F5F1;
+            font-size:14px;
+            font-weight: bold;
+            color:#363535;
+            text-align: center;
+            line-height: 29px;
+            /*height: 35px;*/
+            border-left:1px solid #D5D4D4;
+            border-right:1px solid #D5D4D4 ;
+
+        }
+        div.reviewStasticsLeft span.reviewStasticsNumber{
+            color:#284CA5;
+        }
+        div.reviewStasticsLeft div.reviewStasticsLeftFoot{
+            background-color: #F6F5F1;
+            height: 6px;
+            border-left:1px solid #D5D4D4;
+            border-bottom:1px solid #D5D4D4;
+            border-right: 0px;
+        }
+        div.reviewStasticsRight{
+            overflow: hidden;
+        }
+        div.reviewStasticsRight div.reviewStasticsRightEmpty{
+            height:35px;
+        }
+        div.reviewStasticsRight div.reviewStasticsFoot{
+            height: 6px;
+            /*width:500px;*/
+            background-color: #F6F5F1;
+            border: 1px solid #D5D4D4;
+            border-left: 0px !important;
+        }
+        div.makeReviewDiv{
+            /* width: 680px;*/
+            /*height:350px;*/
+            border: 1px solid #D1CCC8;
+            margin: 20px 0;
+            /*padding:20px 25px;*/
+            background-color: #EFEFEF;
+        }
+        div.makeReviewDiv div.makeReviewText{
+            color: #333;
+            font-weight:bold;
+            font-size:16px;
+            margin:20px 40px  ;
+        }
+        div.makeReviewDiv table.makeReviewTable{
+            margin:20px 40px  ;
+            background-color: white;
+            /* border: 1px solid #E7E7E7;*/
+        }
+        div.makeReviewDiv table.makeReviewTable td{
+            padding: 10px;
+            border:1px solid #E7E7E7 ;
+        }
+        table.makeReviewTable td.makeReviewTableFirstTD{
+
+            background-color: #F6F6F6;
+        }
+        table.makeReviewTable  textarea{
+            width: 420px;
+            height: 120px;
+            border-width: 0px;
+            resize:none;
+        }
+        div.makeReviewButtonDiv{
+            text-align: center;
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        div.makeReviewButtonDiv button{
+            background-color: #c40000;
+            color: white;
+            font-weight: bold;
+            /*font-size: 14px;*/
+            border-width: 0px;
+            border-radius: 2px;
+            width: 72px;
+            height:26px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="myCss/common.css">
+</head>
+<body>
+<!--导航-->
+<nav class="top">
+    <a href="#nowhere">
+        <span class="glyphicon glyphicon glyphicon-home redColor"></span>
+        天猫首页
+    </a>
+    <span>喵，欢迎来天猫</span>
+    <a href="#nowhere">请登录</a>
+    <a href="#nowhere">免费注册</a>
+
+       <span class="pull-right">
+           <a href="forebought">我的订单</a>
+           <a href="forecart">
+               <span class=" glyphicon glyphicon-shopping-cart redColor" ></span>
+               购物车<strong>0</strong>件</a>
+       </span>
+</nav>
+<!--搜索栏-->
+<form method="post">
+    <div style="max-width: 1013px;margin: 10px auto">
+        <a href="#nowhere" > <img src="img/site/logo.gif" class="logo" id="logo"></a>
+        <div class="searchDiv">
+            <input type="text" name="keyword" placeholder="时尚男鞋  太阳镜">
+            <button class="searchButton" type="submit">搜索</button>
+            <div class="searchBelow">
+                <span > <a href="#nowhere">平衡车</a> <span>|</span></span>
+                <span > <a href="#nowhere">扫地机器人</a> <span>|</span></span>
+                <span > <a href="#nowhere">原汁机</a> <span>|</span></span>
+                <span > <a href="#nowhere">冰箱</a> </span>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+</form>
+
+<div class="reviewDiv">
+    <div class="reviewProductInfoDiv">
+        <div class="reviewProductInfoImg"><img class="reviewProductImg" src="img/productSingle/8697.jpg" width="100px"></div>
+        <div class="reviewProductInfoRightDiv">
+            <div class="reviewProductInfoRightText">2016夏季新款女装雪纺衫短裤两件套 韩版时尚名媛休闲套装女夏装</div>
+            <table class="reviewProductInfoTable">
+                <tbody>
+                <tr>
+                    <td width="75px">价格:</td>
+                    <td> <span class="reviewProductInfoTablePrice">￥263.00 </span>元 </td>
+                </tr>
+                <tr>
+                    <td>配送</td>
+                    <td>快递: 0.00</td>
+                </tr>
+                <tr>
+                    <td>月销量:</td>
+                    <td> <span class="reviewProductInfoTableSellNumber">50</span>  件</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="reviewProductInfoRightBelowDiv">
+                <span class="reviewProductInfoRightBelowImg"> <!--<img src="img/site/reviewLight.png">--> </span>
+                <span class="reviewProductInfoRightBelowText">现在查看的是 您所购买商品的信息 于2016年09月12下单购买了此商品</span>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+
+    <div class="reviewStasticsDiv">
+        <div class="reviewStasticsLeft">
+            <div class="reviewStasticsLeftTop"></div>
+            <div class="reviewStasticsLeftContent">累计评价<span class="reviewStasticsNumber">13</span></div>
+            <div class="reviewStasticsLeftFoot"></div>
+        </div>
+        <div class="reviewStasticsRight">
+            <div class="reviewStasticsRightEmpty"></div>
+            <div class="reviewStasticsFoot"></div>
+        </div>
+        <form method="post">
+            <div class="makeReviewDiv">
+                <div class="makeReviewText">其他买家，需要你的建议哦！</div>
+                <table class="makeReviewTable">
+                    <tr>
+                        <td class="makeReviewTableFirstTD">评价商品</td>
+                        <td><textarea name="content"></textarea></td>
+                    </tr>
+                </table>
+                <div class="makeReviewButtonDiv">
+                    <input type="hidden" value="952" name="oid">
+                    <input type="hidden" value="256" name="pid">
+                    <button type="button">提交评价</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--页脚第一部分-->
+<div style="display: block" class="footer" id="footer">
+    <div class="foot_ensure" id="foot_ensure">
+        <div> <img src="img/site/ensure.png" ></div>
+    </div>
+    <div class="footer_desc" id="footer_desc">
+        <div class="descColumn"><span class="descColumnTitle">购物指南</span>
+            <a href="#nowhere">免费注册 </a>
+            <a href="#nowhere">开通支付宝 </a>
+            <a href="#nowhere"> 支付宝充值</a>
+        </div>
+        <div class="descColumn"><span class="descColumnTitle">天猫保障</span>
+            <a href="#nowhere">发票保障   </a>
+            <a href="#nowhere">售后规则 </a>
+            <a href="#nowhere"> 缺货赔付</a>
+        </div>
+        <div class="descColumn"><span class="descColumnTitle">支付方式</span>
+            <a href="#nowhere">快捷支付     </a>
+            <a href="#nowhere">信用卡 </a>
+            <a href="#nowhere"> 蚂蚁花呗</a>
+            <a href="#nowhere"> 货到付款</a>
+        </div>
+        <div class="descColumn"><span class="descColumnTitle">商家服务</span>
+            <a href="#nowhere">商家入驻 </a>
+            <a href="#nowhere">商家中心 </a>
+            <a href="#nowhere"> 天猫智库</a>
+            <a href="#nowhere"> 天猫规则</a>
+            <a href="#nowhere"> 物流服务</a>
+            <a href="#nowhere"> 喵言喵语</a>
+            <a href="#nowhere"> 运营服务</a>
+        </div>
+        <div class="descColumn"><span class="descColumnTitle">手机天猫</span>
+            <a href="#nowhere"><img src="img/site/ma.png"></a>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+</div>
+<!--页脚第二部分-->
+<div class="footer2" id="footer2">
+    <img src="img/site/cateye.png" class="cateye" id="cateye">
+
+    <div class="copyright" id="copyright">
+        <div class="white_link">
+            <a href="#nowhere">关于天猫</a>
+            <a href="#nowhere"> 帮助中心</a>
+            <a href="#nowhere">开放平台</a>
+            <a href="#nowhere">  诚聘英才</a>
+            <a href="#nowhere">联系我们</a>
+            <a href="#nowhere">网站合作</a>
+            <a href="#nowhere">法律声明</a>
+            <a href="#nowhere">知识产权</a>
+            <a href="#nowhere">  廉正举报 </a>
+        </div>
+        <div class="white_link">
+            <a href="#nowhere"> 阿里巴巴集团</a><span class="slash">|</span>
+            <a href="#nowhere"> 淘宝网</a><span class="slash">|</span>
+            <a href="#nowhere">天猫 </a><span class="slash">|</span>
+            <a href="#nowhere">  聚划算</a><span class="slash">|</span>
+            <a href="#nowhere">全球速卖通</a><span class="slash">|</span>
+            <a href="#nowhere">阿里巴巴国际交易市场</a><span class="slash">|</span>
+            <a href="#nowhere">1688</a><span class="slash">|</span>
+            <a href="#nowhere">阿里妈妈</a><span class="slash">|</span>
+            <a href="#nowhere">  阿里旅行·去啊  </a><span class="slash">|</span>
+            <a href="#nowhere">  阿里云计算    </a><span class="slash">|</span>
+            <a href="#nowhere">  阿里通信     </a><span class="slash">|</span>
+            <a href="#nowhere">  YunOS    </a><span class="slash">|</span>
+            <a href="#nowhere">  阿里旅行·去啊  </a><span class="slash">|</span>
+            <a href="#nowhere">   万网  </a><span class="slash">|</span>
+            <a href="#nowhere">  高德   </a><span class="slash">|</span>
+            <a href="#nowhere"> 优视    </a><span class="slash">|</span>
+            <a href="#nowhere">  友盟   </a><span class="slash">|</span>
+            <a href="#nowhere">  虾米   </a><span class="slash">|</span>
+            <a href="#nowhere">  天天动听 </a><span class="slash">|</span>
+            <a href="#nowhere">  来往   </a><span class="slash">|</span>
+            <a href="#nowhere">  钉钉   </a><span class="slash">|</span>
+            <a href="#nowhere">  支付宝      </a>
+        </div>
+        <div class="license">
+            <span>增值电信业务经营许可证： 浙B2-20110446</span>
+            <span>网络文化经营许可证：浙网文[2015]0295-065号</span>
+            <span>互联网医疗保健信息服务 审核同意书 浙卫网审【2014】6号 </span>
+            <span>互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</span>
+            <div class="copyRightYear">© 2003-2016 TMALL.COM 版权所有</div>
+            <div>
+                <img src="img/site/copyRight1.jpg">
+                <img src="img/site/copyRight2.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

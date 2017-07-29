@@ -1,0 +1,143 @@
+body{
+    font-size: 12px;
+    font-family:Arial;
+}
+div.cartDiv{
+    max-width: 1013px;
+    margin: 10px auto;
+    color:black;
+}
+div.cartTitle button.createOrderButton{
+    background-color: #aaaaaa;
+    border: 1px solid #aaa;
+    color: white;
+    width: 53px;
+    height: 25px;
+    border-radius:2px;
+}
+div.cartTitle span.cartTitlePrice{
+    color: #c40000;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left:5px;
+    margin-right:3px;
+}
+div.cartFoot{
+    background-color:#e5e5e5;
+    line-height:50px;
+    margin:20px 0;
+    padding-left:20px;
+}
+div.cartFoot button.createOrderButton{
+    background-color: #aaaaaa;
+    border: 1px solid #aaa;
+    font-size:20px;
+    text-align: center;
+    color: white;
+    height: 50px;
+    width:120px;
+}
+img.selectAllItem,img.cartProductItemIfSelected{
+    cursor:pointer;
+}
+div.cartFoot span.cartSumNumber{
+    color: #c40000;
+    font-size:16px;
+    font-weight:bold;
+}
+div.cartFoot span.cartSumPrice{
+    color: #c40000;
+    font-size:20px;
+    font-weight:bold;
+}
+table.cartProductTable{
+    width: 100%;
+    font-size: 12px;
+}
+table.cartProductTable th{
+    font-weight:normal;
+    color: #3c3c3c;
+    padding:20px 20px;
+   /* border:1px solid #cccccc;*/
+}
+table.cartProductTable th.selectAndImage{
+    width: 140px;
+}
+table.cartProductTable th.operation{
+    width: 65px;
+}
+tr.cartProductItemTR{
+    border:1px solid #cccccc;
+}
+tr.cartProductItemTR td{
+    padding:20px 20px;
+   /* border: 1px solid crimson;*/
+}
+/*td.cartSelectedProductImg{
+    width: 140px;
+}*/
+img.cartProductItemIfSelected{
+    display: inline-block;
+}
+img.cartProductImg{
+    display: inline-block;
+   padding:1px;
+   border:1px solid #eee;
+   width:80px;
+   height:80px;
+}
+div.cartProductLinkOutDiv{
+   position:relative; /*相对定位，之所以要使用相对定位，
+   是这个div里有用来放3个图标的另一个div:cartProductLinkInnerDiv,而cartProductLinkInnerDiv需要使用绝对定位*/
+   height:80px;
+}
+div.cartProductLinkOutDiv a.cartProductLink{
+   color:#3c3c3c;
+}
+div.cartProductLinkOutDiv a.cartProductLink:hover{
+   color: #c40000;
+   text-decoration:underline;
+}
+div.cartProductLinkOutDiv div.cartProductLinkInnerDiv{
+   position:absolute;
+   bottom:0;
+   height:20px;
+}
+span.cartProductItemOringalPrice{
+   text-decoration: line-through;
+   color: #9c9c9c;
+   font-weight:bold;
+   font-size:14px;
+   display: block;
+}
+span.cartProductItemPromotionPrice{
+   color: #c40000;
+   font-weight:bold;
+   font-size:14px;
+
+}
+div.cartProductChangeNumberDiv{
+   border:1px solid #e5e5e5;
+   width:80px;
+}
+div.cartProductChangeNumberDiv a{
+   color: black;
+   text-decoration:none;
+   width:14px;
+   display: inline-block;
+   text-align: center;
+  /* border:1px solid red;*/
+}
+div.cartProductChangeNumberDiv input{
+   border:1px solid #aaa;
+   width:42px;
+   display: inline-block;
+}
+span.cartProductItemSmallSumPrice{
+   color: #c40000;
+   font-weight:bold;
+   font-size:14px;
+}
+img.cartProductItemIfSelected, img.selectAllItem{
+   cursor: pointer;
+}
